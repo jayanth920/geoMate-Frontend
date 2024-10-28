@@ -7,8 +7,8 @@ function App() {
   const fetchLocations = async () => {
     try {
       const response = await axios.get(process.env.REACT_APP_BACKEND_URI);
-      console.log(response.data);
-      setLocations(response.data);
+      console.log(response.data)
+      setLocations(response.data.reverse());
     } catch (error) {
       console.error('Error fetching locations:', error);
     }
