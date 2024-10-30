@@ -33,7 +33,8 @@ function App() {
               <li>Village <b>{loc.village}</b></li>
               <li>Latitude <b>{loc.latitude}</b></li>
               <li>Longitude <b>{loc.longitude}</b></li>
-              <li>MapLink <a href={`https://www.google.com/maps/place/${loc.latitude},${loc.longitude}`}>LINK</a></li>
+              <li>MapLink <a target="_blank" style={{color:"white"}} href={`https://www.google.com/maps/place/${loc.latitude},${loc.longitude}`}><b>MAPS</b></a></li>
+              <li>Tips <a target="_blank" style={{color:"white"}} href={`https://www.plonkit.net/${loc.country.toLowerCase()}`}><b>TIPS</b></a></li>
             </div>
           ))
         ) : (
