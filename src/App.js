@@ -18,7 +18,7 @@ function App() {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>Fetched Locations</h1>
-      <button onClick={fetchLocations} style={{ marginBottom: '10px' }}>
+      <button onClick={fetchLocations} style={{ marginBottom: '10px', width:"200px", height:"50px" }}>
         Refresh Locations
       </button>
 
@@ -33,6 +33,7 @@ function App() {
               <li>Village <b>{loc.village}</b></li>
               <li>Latitude <b>{loc.latitude}</b></li>
               <li>Longitude <b>{loc.longitude}</b></li>
+              <li>MapLink <a href={`https://www.google.com/maps/place/${loc.latitude},${loc.longitude}`}>LINK</a></li>
             </div>
           ))
         ) : (
